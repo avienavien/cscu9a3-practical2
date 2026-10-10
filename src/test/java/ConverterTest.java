@@ -38,6 +38,9 @@ public class ConverterTest
 
 		// 24 mph is faster than 60 mph, so this should be false
 		assertTrue(converter.mph2kph_compare(60, 24));
+
+		// 50 mph is equal to 50 mph, true;
+		assertTrue(converter.mph2kph_compare(50,50));
 	}
 
 	@Test
